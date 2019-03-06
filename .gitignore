@@ -7,3 +7,4 @@ platforms
 plugins
 res
 node_modules
+./www/js/webpack_output/webpackOutput.js
