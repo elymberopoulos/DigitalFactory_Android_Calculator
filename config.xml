@@ -23,5 +23,12 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <universal-links>
+        <host name="digitalfactoryinterview.page.link" scheme="https" />
+        <host name="digitalfactory-f0ddc.firebaseapp.com" scheme="https">
+            <path url="/__/auth/callback" />
+        </host>
+    </universal-links>
+    <plugin name="cordova-plugin-x-toast" spec="^2.7.2" />
     <engine name="android" spec="^7.1.4" />
 </widget>

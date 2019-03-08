@@ -8,7 +8,6 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport"
         content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
 
     <title>Digital Factory Code Interview</title>
 </head>
@@ -18,22 +17,19 @@
         <div id="formArea">
             <h4 class="mathTitle">Basic Math</h4>
             <form>
-                <input type="number" name="valueOne" placeholder="Enter Value One" class="inputLine"><br>
-                <input type="number" name="ValueTwo" placeholder="Enter Value Two" class="inputLine"><br>
-                <button type="button" id="calculateAnswer">Calculate Answer</button>
+                <input type="number" name="valueOne" placeholder="Enter Value One" class="inputLine" id="valueOne"><br>
+                <input type="number" name="ValueTwo" placeholder="Enter Value Two" class="inputLine" id="valueTwo"><br>
             </form>
 
         </div>
-        <div id="trigFormArea">
+        <!-- <div id="trigFormArea">
             <h4 class="mathTitle">Trigonometry</h4>
             <form>
                 <input type="number" name="sideOne" placeholder="Side One Length" class="inputLine"><br>
                 <input type="number" name="sideTwo" placeholder="Side Two Length" class="inputLine"><br>
-                <input type="number" name="sideThree" placeholder="Side Three Length" class="inputLine"><br>
-                <button type="button" id="calculateAnswer">Calculate Answer</button>
             </form>
 
-        </div>
+        </div> -->
         <div id="buttonArea">
             <ul>
                 <li><button class="mathButton" value="addition">+</button></li>
@@ -41,6 +37,12 @@
                 <li><button class="mathButton" value="multiplication">*</button></li>
                 <li><button class="mathButton" value="division">/</button></li>
             </ul>
+            <ul>
+                <li><button class="mathButton" value="sine">sin</button></li>
+                <li><button class="mathButton" value="cosine">cos</button></li>
+                <li><button class="mathButton" value="tangent">tan</button></li>
+            </ul>
+            <button class="mathButton" value="calculate" id="calculateBTN">calculate</button>
 
         </div>
     </div>
