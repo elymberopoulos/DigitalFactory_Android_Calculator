@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "compile": "concurrently \"webpack ./www/js/index.js --watch\"",
-    "deploy": "concurrently \"webpack ./www/js/index.js\" \"cordova run android\""
+    "deploy": "concurrently \"webpack ./www/js/index.js\" \"cordova run android\"",
+    "app": "cordova run android"
   },
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",

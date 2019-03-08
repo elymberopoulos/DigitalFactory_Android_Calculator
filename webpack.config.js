@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 module.exports = {
     entry: './www/js/index.js',
     output: {
@@ -9,15 +11,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 loader: "style-loader!css-loader"
-            },
-            // {
-            //     test: /\.m?js$/,
-            //     loader: 'babel-loader', 
-            //     exclude: /node_modules/,
-            //     options:{
-            //         presets:['@babel/preset-env']
-            //     }
-            // }
+            }
         ]
     },
     mode: 'development'

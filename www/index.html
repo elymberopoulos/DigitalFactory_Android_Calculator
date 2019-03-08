@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div>
-            <h1>Hello World</h1>
+
+<head>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+
+    <title>Digital Factory Code Interview</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="formArea">
+            <h4 class="mathTitle">Basic Math</h4>
+            <form>
+                <input type="number" name="valueOne" placeholder="Enter Value One" class="inputLine"><br>
+                <input type="number" name="ValueTwo" placeholder="Enter Value Two" class="inputLine"><br>
+                <button type="button" id="calculateAnswer">Calculate Answer</button>
+            </form>
+
         </div>
-        
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="./js/webpack_output/webpackOutput.js"></script>
-    </body>
+        <div id="trigFormArea">
+            <h4 class="mathTitle">Trigonometry</h4>
+            <form>
+                <input type="number" name="sideOne" placeholder="Side One Length" class="inputLine"><br>
+                <input type="number" name="sideTwo" placeholder="Side Two Length" class="inputLine"><br>
+                <input type="number" name="sideThree" placeholder="Side Three Length" class="inputLine"><br>
+                <button type="button" id="calculateAnswer">Calculate Answer</button>
+            </form>
+
+        </div>
+        <div id="buttonArea">
+            <button class="button">Button</button>
+            <button class="button">Button</button>
+            <button class="button">Button</button>
+            <button class="button">Button</button>
+            <button class="button">Button</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/webpack_output/webpackOutput.js"></script>
+</body>
+
 </html>
