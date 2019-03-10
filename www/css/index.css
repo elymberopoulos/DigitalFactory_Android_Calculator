@@ -44,6 +44,26 @@ button{
     align-self: center;
     width: 95%;
 }
+#frontPage{
+  background-image: linear-gradient(black, rgb(145, 145, 145));
+}
+
+#digital{
+  font-size: 500%;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  grid-column: 1/12;
+  grid-row: 2/4;
+}
+#factory{
+  font-size: 500%;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  grid-column: 1/12;
+  grid-row: 4/7;
+}
 
 #buttonArea{
     align-content: center;
@@ -66,12 +86,21 @@ button{
   padding: 2%;
 }
 
-#gmailLogin{
+.gmail{
   border-radius: 30%;
   margin-top: 10%;
   text-align: center;
   font-size: 150%;
   background-color: rgb(255, 58, 58);
+  grid-column: 2/11;
+  grid-row: 8/9;
+}
+.gmail:focus{
+  border-radius: 30%;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 150%;
+  background-color: rgb(255, 122, 122);
   grid-column: 2/11;
   grid-row: 8/9;
 }

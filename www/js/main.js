@@ -1,4 +1,5 @@
 require('../css/index.css');
+
 const mathModule = require('../../mathFramework/basicMath/BasicMath');
 const trig = require('../../mathFramework/basicMath/trigonometry/SohCahToa');
 const resultAppend = require('./ui/AppendResults');
@@ -6,13 +7,12 @@ const $ = require('jquery');
 
 $(document).ready(function () {
 
-    var calculateAnswer = $("#calculateBTN").on("click", myfunction);
+    var calculateAnswer = $("#calculateBTN").on("click", calculations);
     var operatorBtn = $(".mathButton").on("click", setMathOperation);
     var clearBtn = $("#clearBTN").on("click", clear);
     var resultOutput = $("#resultTag");
-    // var resultInput = $("#result");
-
     var mathOperation = "";
+
 
     function clear() {
         $("#valueOne").val("");
@@ -24,7 +24,7 @@ $(document).ready(function () {
         mathOperation = this.value;
     }
 
-    function myfunction() {
+    function calculations() {
         var valueOne = parseFloat($("#valueOne").val());
         var valueTwo = parseFloat($("#valueTwo").val());
 
@@ -51,19 +51,26 @@ $(document).ready(function () {
             case "division":
                 var result = mathModule.divide(valueOne, valueTwo);
                 alert(result);
-
                 resultAppend.Output(result, mathOperation);
                 break;
 
             case "sine":
-                var result = trig.sine()
-                alert('sine');
+                var result = trig.sine(valueOne, valueTwo);
+                alert(result);
+                resultAppend.Output(result, mathOperation);
                 break;
+
             case "cosine":
-                alert('cosine');
+                var result = trig.cosine(valueOne, valueTwo);
+                alert(result);
+                resultAppend.Output(result, mathOperation);
                 break;
+
             case "tangent":
-                alert('tangent');
+                var result = trig.tangent(valueOne, valueTwo);
+                alert(result);
+                resultAppend.Output(result, mathOperation);
+
             default:
                 alert("Please select an operation");
                 break;
