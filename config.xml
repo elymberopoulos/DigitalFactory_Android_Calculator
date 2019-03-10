@@ -16,6 +16,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="android-minSdkVersion" value="19" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
@@ -30,5 +31,15 @@
         </host>
     </universal-links>
     <plugin name="cordova-plugin-x-toast" spec="^2.7.2" />
+    <plugin name="cordova-plugin-buildinfo" spec="^2.0.2" />
+    <plugin name="cordova-universal-links-plugin" spec="^1.2.1" />
+    <plugin name="cordova-plugin-browsertab" spec="0.2.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
+    <plugin name="cordova-plugin-customurlscheme" spec="4.3.0">
+        <variable name="URL_SCHEME" value="com.firebase.cordova" />
+        <variable name="ANDROID_SCHEME" value=" " />
+        <variable name="ANDROID_HOST" value=" " />
+        <variable name="ANDROID_PATHPREFIX" value="/" />
+    </plugin>
     <engine name="android" spec="^7.1.4" />
 </widget>
