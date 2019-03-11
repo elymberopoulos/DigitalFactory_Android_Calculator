@@ -1,3 +1,7 @@
+/*
+Basic math functions seperate from the main source code. Math framework.
+*/
+
 function add(value1, value2){
     if(typeof value1 !== 'number' && typeof value2 !== 'number'){
         alert("Please enter a number");

@@ -1,5 +1,7 @@
+/*
+This module function dynamically uses javascript to append calculation results to the user's screen.
+*/
 const $ = require('jquery');
-
 
 function Output(value, mathOperation){
     var resultOutput = $("#resultTag");
