@@ -1,4 +1,5 @@
 ### Information
+- Source code is in the www directory and the calculator functions are in the mathFramework directory.
 - The application uses the Apache Cordova framework for mobile development.
 - It allows for applications to run in a web view using html, javascript, css, etc.
 - The result is a mobile application that can be coded once and deployed to multiple 
