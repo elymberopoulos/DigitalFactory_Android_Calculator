@@ -59,43 +59,37 @@ $(document).ready(function () {
             case "addition":
                 var result = mathModule.add(valueOne, valueTwo);
                 resultAppend.Output(result, mathOperation);
-                alert(result);
                 break;
 
             case "subtraction":
                 var result = mathModule.subtract(valueOne, valueTwo);
-                alert(result);
                 resultAppend.Output(result, mathOperation);
                 break;
 
             case "multiplication":
                 var result = mathModule.multiply(valueOne, valueTwo);
-                alert(result);
                 resultAppend.Output(result, mathOperation);
                 break;
 
             case "division":
                 var result = mathModule.divide(valueOne, valueTwo);
-                alert(result);
                 resultAppend.Output(result, mathOperation);
                 break;
 
             case "sine":
                 var result = trig.sine(valueOne, valueTwo);
-                alert(result);
                 resultAppend.Output(result, mathOperation);
                 break;
 
             case "cosine":
                 var result = trig.cosine(valueOne, valueTwo);
-                alert(result);
                 resultAppend.Output(result, mathOperation);
                 break;
 
             case "tangent":
                 var result = trig.tangent(valueOne, valueTwo);
-                alert(result);
                 resultAppend.Output(result, mathOperation);
+                break;
 
             default:
                 alert("Please select an operation");
