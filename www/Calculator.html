@@ -17,6 +17,7 @@
     <div class="wrapper">
         <div id="formArea">
             <h4 class="mathTitle">Basic Math</h4>
+            <!-- These are the input fields for users to input numerical values -->
             <form>
                 <input type="number" name="valueOne" placeholder="Enter Value One" class="inputLine" id="valueOne"><br>
                 <input type="number" name="ValueTwo" placeholder="Enter Value Two" class="inputLine" id="valueTwo"><br>
@@ -24,6 +25,7 @@
 
         </div>
         <div id="buttonArea">
+            <!-- These are the math operator selection buttons on the screen -->
             <ul>
                 <li><button class="mathButton" value="addition">+</button></li>
                 <li><button class="mathButton" value="subtraction">-</button></li>
@@ -35,15 +37,18 @@
                 <li><button class="mathButton" value="cosine">cos</button></li>
                 <li><button class="mathButton" value="tangent">tan</button></li>
             </ul>
+            <!-- These are the calculate and clear buttons -->
             <button class="mathButton" value="calculate" id="calculateBTN">Calculate</button>
             <button class="mathButton" id="clearBTN">Clear</button>
         </div>
 
+        <!-- This is the location on the screen where the results are output -->
         <div id="resultArea">
             <h4 id="resultTag">
                 Result:
             </h4>
 
+        <!-- logout button -->
         </div>
         <div class = "gmail" id="gmailLogout">
             Logout
@@ -52,12 +57,7 @@
     </div>
     <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    <script type="text/javascript" src="./js/firebase/auth/Initialize.js"></script>
-    <script>
-        document.addEventListener("deviceready", firebaseInit, false);
-    </script>
     <script type="text/javascript" src="./js/webpack_output/webpackOutput.js"></script>
-
 </body>
 
 </html>

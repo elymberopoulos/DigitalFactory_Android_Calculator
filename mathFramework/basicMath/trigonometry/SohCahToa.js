@@ -1,3 +1,7 @@
+/*
+Basic trigonometry functions in a library seperate from the main source code of the app.
+*/
+
 function sine(opposite, hypotenuse){
     if(typeof opposite !== 'number' && typeof hypotenuse !== 'number'){
         alert("Please enter a number");
